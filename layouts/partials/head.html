@@ -53,5 +53,7 @@
 <link href="{{ if .OutputFormats.Get "json" }}{{ "feed.json" | absURL }}{{ end }}" rel="alternate" type="application/json" title="{{ $.Site.Title }}" />
 {{ end }}
 
+<link href="{{ "vendor/baguetteBox.css" | absURL }}" rel="stylesheet">
+
 <!-- Extended head section-->
 {{ partial "extended_head.html" . }}
