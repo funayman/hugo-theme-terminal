@@ -1,6 +1,6 @@
 {{ if .Get "src" }}
 <a href="{{ .Get "src" | safeURL }}" {{ with .Get "caption" }} data-caption={{ . }} {{ end }}>
-    <img src="{{ .Get "src" | safeURL }}"
+  <img src="{{ with .Get "thumb" }} {{ . | safeURL }} {{ else }} {{ .Get "src" | safeURL }} {{ end }}"
       {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }}
       class="{{ with .Get "position"}}{{ . }}{{ else -}} left {{- end }}"
       {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} />
