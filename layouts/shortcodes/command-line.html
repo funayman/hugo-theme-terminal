@@ -1,0 +1,7 @@
+<pre class="command-line language-{{ if .Get "lang" }}{{ .Get "lang" }}{{ else }}bash{{ end }}"
+  data-user="{{ if .Get "user" }}{{ .Get "user" }}{{ else }}user{{ end }}"
+  data-host="{{ if .Get "host" }}{{ .Get "host" }}{{ else }}localhost{{ end }}"
+  {{ if .Get "output" }}data-output="{{ .Get "output" }}"{{ end }}
+  {{ if .Get "prompt" }}data-promot="{{ .Get "prompt" }}"{{ end }} >
+<code>{{ trim .Inner "\n" }}</code>
+</pre>
