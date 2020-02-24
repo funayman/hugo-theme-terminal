@@ -7,7 +7,7 @@
   {{ if .IsHome }}
     {{ $PageContext = .Site }}
   {{ end }}
-  {{ $paginator := .Paginate (where $PageContext.RegularPages "Type" $contentTypeName) }}
+  {{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" .Site.Params.sectionsList) }}
 
   {{ range $paginator.Pages }}
   <div class="post on-list">
