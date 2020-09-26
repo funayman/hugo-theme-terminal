@@ -1,5 +1,5 @@
-/* PrismJS 1.20.0
-https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+asciidoc+asm6502+bash+basic+c+cpp+csp+diff+dns-zone-file+docker+git+go+http+hsts+ini+java+javadoc+javadoclike+javastacktrace+jq+json+kotlin+latex+makefile+markdown+markup-templating+nginx+plsql+powershell+properties+python+scheme+shell-session+sql+toml+twig+vbnet+vim+visual-basic+yaml&plugins=line-highlight+line-numbers+custom-class+file-highlight+command-line+toolbar+copy-to-clipboard+download-button */
+/* PrismJS 1.21.0
+https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+asciidoc+asm6502+bash+basic+c+cpp+csp+diff+dns-zone-file+docker+git+go+http+hsts+ini+java+javadoc+javadoclike+javastacktrace+jq+json+kotlin+latex+makefile+markdown+markup-templating+nginx+php+phpdoc+php-extras+plsql+powershell+properties+python+scheme+shell-session+sql+toml+twig+vbnet+vim+visual-basic+yaml&plugins=line-highlight+line-numbers+custom-class+file-highlight+command-line+toolbar+copy-to-clipboard+download-button */
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -54,7 +54,7 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: slategray;
+	color: #8292a2;
 }
 
 .token.punctuation {
